@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #eef1f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(45deg, #04c0c0, #0d47a1);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    nav a {
+      margin: 0 18px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      padding: 50px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0d47a1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 5px solid #1a73e8;
+      transition: 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* CONTACT BOX STYLE */
+    .contact-box {
+      background: #f0f4ff;
+      padding: 25px;
+      border-radius: 12px;
+      border-left: 5px solid #0d47a1;
+      max-width: 500px;
+      margin: 20px auto;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-box p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+    }
+  </style>
+
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m <strong>MEKDELAWIT MELESE</strong> — a beginner web developer who loves creating 
+      clean and simple websites. I’m currently learning <em>HTML</em>, <em>CSS</em>, and
+      <em>JavaScript</em>, and I build small projects to practice new concepts and improve
+      my skills every day. My goal is to become a full-stack developer and work on
+      real-world applications.
+    </p>
+
+    <ul class="skills">
+      <li><strong>Current skills:</strong> HTML (basics), CSS (styling), JavaScript (basics)</li>
+      <li><strong>Practice projects:</strong> Portfolio site, HTML frames work, CSS layout assignments</li>
+      <li><strong>Goals:</strong> Learn responsive design, improve JavaScript, learn backend development</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>HTML Frames Assignment</h3>
+        <p>
+          A simple beginner project using HTML frames to divide a webpage into 
+          multiple sections. Includes navigation, content panels, and basic layouts 
+          for learning how framesets work.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>CSS Layout Practice</h3>
+        <p>
+          A project focused on learning CSS layout techniques such as Flexbox, 
+          borders, spacing, alignment, and color combinations. Designed different 
+          boxes and containers for practice.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Basic HTML Website</h3>
+        <p>
+          A simple multi-page website built using HTML and basic CSS. Includes a 
+          homepage, about page, and contact page with headings, images, and 
+          navigation links.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UPDATED CONTACT SECTION (with inbox.jpg image) -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+
+      <p>
+        <img src="inbox.jpg" alt="email icon" 
+             style="width:25px; vertical-align:middle; margin-right:10px;">
+        <strong>Email:</strong> example@mail.com
+      </p>
+
+      <p> 
+        <img src="phone.jpg" alt="email icon" 
+             style="width:25px; vertical-align:middle; margin-right:10px;">
+             <strong>Mobile:</strong> +251 9XX XXX XXX</p>
+      <p>
+        <img src="map.jpg" alt="email icon" 
+             style="width:40px; vertical-align:middle; margin-right:10px;">
+             <strong>Location:</strong> Addis Ababa, Ethiopia</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>
